@@ -1,0 +1,21 @@
+.social-media {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.social-media-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.social-icon {
+    width: 25px;
+    height: 25px;
+}

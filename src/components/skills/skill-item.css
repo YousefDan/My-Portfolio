@@ -1,0 +1,43 @@
+.skill {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.skill-title {
+  font-size: 17px;
+}
+.skill-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  color: rgb(99, 96, 96);
+}
+.skill-wrapper div {
+  font-size: 16px;
+}
+.skill-progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: rgb(199, 203, 206);
+  border-radius: 10px;
+}
+.skill-progress {
+  height: 100%;
+  background-color: #1fa588;
+  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .skill {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .skill {
+    width: 30%;
+  }
+  .skill-wrapper {
+    justify-content: space-around;
+  }
+}

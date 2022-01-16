@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import Contact from "./components/contact/Contact";
+import Intro from "./components/intro/Intro";
+import ProductList from "./components/productList/ProductList";
+import Skills from "./components/skills/Skills";
+import Toggle from "./components/toggle/Toggle";
+import ThemeContext from "./context";
 
-function App() {
+const App = () => {
+  const {darkMode} = useContext(ThemeContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main style={{backgroundColor: darkMode ? "#222831" : "white"}}>
+      <Intro />
+      <ProductList />
+      <Skills />
+      <Contact />
+      <Toggle />
+    </main>
   );
-}
+};
 
 export default App;

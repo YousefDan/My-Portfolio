@@ -1,0 +1,26 @@
+.skills {
+    padding: 21px;
+    box-shadow: 0 0 2px 2px gray;
+    border: 1px solid gray;
+    margin: 50px 21px;
+    border-radius: 10px;
+}
+.skills-title {
+    margin-bottom: 17px;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    padding-bottom: 7px;
+    width: max-content;
+    color: rgb(66, 66, 66);
+    font-size: 21px;
+}
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+    .skills-wrapper {
+        flex-direction: column;
+    }
+}
